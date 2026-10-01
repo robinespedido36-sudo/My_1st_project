@@ -4,91 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body {
-	background-color: yellow;
-}
-h3 {color: #14069b; font-size: 34px;}
-.labas {border: solid blue; padding: 5px; text-align: center; margin: 4px;}
-.loob {border: 5px dashed red;}
-pre {font-size:25px; color: green; text-align: center;}
-.linya1:hover {
-	color: red;
-}
-.linya2:hover {
-	color: blue;
-}
-.linya3:hover {color: orange;}
-.box {border: 7px solid blue; padding: 10px; color: red; margin:4px;}
-.box1 {border: 7px dashed blue; padding: 5px; margin: 4px; text-align: center;}
-.box2 {border: 6px solid violet; padding: 5px; margin: 4px;}
-.box3 {border: 6px dashed green;}
-.box_all {
-	border: 7px solid blue;
-	margin: 4px;
-	}
-	h3:hover {transform: scale(2.0);}
-	h2:hover { transform: scale(2.0);}
-	.linya4:hover {
-		color: pink;
-	}
-
-.tigre-logo {
-  width: 280px;  
-  height: auto;    
-  display: block;    
-  margin: 10px auto;  
-  border-radius: 8px; 
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3); 
-  transition: transform 0.3s ease; 
-}
-
-
-.tigre-logo:hover {
-  transform: scale(1.05); 
-  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.4); 
-}
-.border {
-	border: 5px solid black ; margin: 5px;
-}
-.box-a {
-	border: 4px solid blue; 
-	border-radius: 8px;
-	}
-	.box-a:hover {
-   box-shadow: 8px 8px 25px rgba(0, 0, 139, 0.6);
-   transform: translateY(-3px);
-   background: #e0ebff;
-   }
-   .box-b {
-	border: 4px solid blue; 
-	border-radius: 8px;
-	}
-	.box-b:hover {
-   box-shadow: 8px 8px 25px rgba(0, 0, 139, 0.6);
-   transform: translateY(-3px);
-   background: #e0ebff;
-   }
-  .box-c1 {
-	   border: 4px solid blue; 
-	   border-radius: 8px;
-	  }
-	.box-c1:hover {
-   box-shadow: 8px 8px 25px rgba(0, 0, 139, 0.6);
-   transform: translateY(-3px);
-   background: #e0ebff;
-   }
- .box-d1 {
-	border: 4px solid blue; 
-	border-radius: 8px;
-	}
-	.box-d1:hover {
-   box-shadow: 8px 8px 25px rgba(0, 0, 139, 0.6);
-   transform: translateY(-3px);
-   background: #e0ebff;
-   }
-   
-   
-
 @font-face {
   font-family: "Merriweather Sans";
   src: url('MerriweatherSans-Medium.ttf') format('truetype');
@@ -96,14 +11,13 @@ pre {font-size:25px; color: green; text-align: center;}
 
 body {
   margin: 0;
-  min-height: 100vh; 
+  min-height: 100vh;
+  font-family: "Merriweather Sans", sans-serif;
   
- 
   background: linear-gradient(45deg, #FCE38A, #f5ad4d, #fd81b5, #f74689, #ad5af3, #8a13ef, #8a24ef, #9a37fe);
   background-size: 400% 400%;
-  animation: BackgroundGradient 20s ease infinite; 
+  animation: BackgroundGradient 20s ease infinite;
   
-  font-family: "Merriweather Sans", sans-serif;
   margin-bottom: 200px;
 }
 
@@ -111,10 +25,56 @@ body {
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+h3 {color: #14069b; font-size: 34px;}
+h2:hover { transform: scale(2.0); }
+h3:hover { transform: scale(2.0); }
+
+.labas {border: solid blue; padding: 5px; text-align: center; margin: 4px;}
+.loob {border: 5px dashed red;}
+pre {font-size:25px; color: green; text-align: center;}
+
+.linya1:hover { color: red; }
+.linya2:hover { color: blue; }
+.linya3:hover { color: orange; }
+.linya4:hover { color: pink; }
+
+.box {border: 7px solid blue; padding: 10px; color: red; margin:4px;}
+.box1 {border: 7px dashed blue; padding: 5px; margin: 4px; text-align: center;}
+.box2 {border: 6px solid violet; padding: 5px; margin: 4px;}
+.box3 {border: 6px dashed green;}
+.box_all {border: 7px solid blue; margin: 4px;}
+
+.box-a, .box-b, .box-c1, .box-d1 {
+  border: 4px solid blue;
+  border-radius: 8px;
+}
+.box-a:hover, .box-b:hover, .box-c1:hover, .box-d1:hover {
+  box-shadow: 8px 8px 25px rgba(0, 0, 139, 0.6);
+  transform: translateY(-3px);
+  background: #e0ebff;
+}
+
+.tigre-logo {
+  width: 280px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+.tigre-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.border { border: 5px solid black; margin: 5px; }
 
 .OBEN {
   color: #ffffff;
-  background: rgba(0,0,0,0.25); 
+  background: rgba(0,0,0,0.25);
   padding: 25px;
   margin: 30px;
   border-radius: 0.5rem;
@@ -122,41 +82,41 @@ body {
 }
 </style>
 </head>
-<body><
+<body>
+
 <div class="border">
 <img src="https://raw.githubusercontent.com/espedidorobin372-cmyk/TIMPLA-NG-TINAPAY/refs/heads/main/tiger-logo.jpg" class="tigre-logo" alt="ROBIN ESPEDIDO">
 </div>
+
 <div class="box_all">
-<div class="box2">
-<div class="box3">
-<h2 style="color: red; font-size: 34px; text-align: center; text-shadow: 6px 6px cyan;">ROBIN ESPEDIDO</h2>
+  <div class="box2">
+    <div class="box3">
+      <h2 style="color: red; font-size: 34px; text-align: center; text-shadow: 6px 6px cyan;">ROBIN ESPEDIDO</h2>
+    </div>
+  </div>
+
+  <div class="labas">
+    <div class="loob">
+      <h3>BAKER</h3>
+    </div>
+  </div>
+
+  <div class="box1">
+    <pre>
+      <div class="box-a"><div class="linya1">IBA'T-IBANG IBANG</div></div>
+      <div class="box-b"><div class="linya2">PARAAN NG PINAG-</div></div>
+      <div class="box-c1"><div class="linya3">GAMITAN NG</div></div>
+      <div class="box-d1"><div class="linya4">STYLE CSS</div></div>
+    </pre>
+  </div>
+
+  <div class="box">
+    <div style="font-size: 20px; font-weight: bold;">
+      ITO SA LOOB NG KAHON<br>
+      GAMIT ANG div class
+    </div>
+  </div>
 </div>
-</div>
-<div class="labas">
-<div class="loob">
-<h3>BAKER</h3>
-</div>
-</div>
-<div class="box1">
-<pre>
-<div class="box-a">
-<div class="linya1">IBA'T-IBANG IBANG</div>
-</div>
-<div class="box-b">
-<div class='linya2'>PARAAN NG PINAG- </div>
-</div>
-<div class="box-c1">
-<div class="linya3">GAMITAN NG</div>
-</div>
-<div class="box-d1">
-<div class="linya4">STYLE CSS</div>
-</div>
-</pre>
-</div>
-<div class="box">
-<div style="font-size: 20px; font-weight: bold;">
-ITO SA LOOB NG KAHON
-GAMIT ANG div class
 
 </body>
 </html>
